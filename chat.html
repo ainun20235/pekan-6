@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+</head>
+<body>
+<fieldset style="background-color: blanchedalmond;">
+<legend>my simple chat</legend>
+	<div id="isichat">
+		
+    </div>
+	<form method="REQUEST" >
+		<input id="pesan" style="width: 50%" type="text" name="pesan">
+		<button onclick="return kirim();">KIRIM PESAN</button>
+	</form>
+	
+</body>
+<script type="text/javascript">
+	function kirim() {
+		pesan = document.getElementById("pesan").value;
+		document.getElementById("isichat").innerHTML = pesan+'\n';
+		
+		return false;
+	}
+</script>
+</fieldset>
+</html>
